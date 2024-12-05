@@ -3,6 +3,7 @@ import Hero from './Hero'
 import FlashSale from './FlashSale'
 import Category from './Category'
 import BestSelling from './BestSelling'
+import Banner from './Banner'
 
 const Homepage = () => {
   return (
@@ -11,6 +12,7 @@ const Homepage = () => {
      <FlashSale/>
      <Category/>
      <BestSelling/>
+     <Banner/>
     </>
   )
 }
