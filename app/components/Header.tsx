@@ -40,14 +40,14 @@ const Header = () => {
           <p className="text-white flex items-center cursor-pointer">
             English{" "}
             <span className="ml-2">
-              <img src="/assets/icons/header-icons/Vector2.svg" />
+              <img src="/assets/header/Vector2.svg" />
             </span>
           </p>
         </div>
       </div>
 
       {/* Main Header */}
-      <div className="max-w-[1170px] mx-auto h-20 flex items-center justify-between lg:mt-4 p-3">
+      <div className="max-w-[1170px] mx-auto h-24 flex items-center justify-between lg:mt-4 p-3">
 
         <h1 className={`text-xl sm:text-2xl font-bold ${inter.className}`}>Exclusive</h1>
 
@@ -74,8 +74,8 @@ const Header = () => {
             />
             <Search />
           </div>
-          <img src="/assets/icons/header-icons/Vector.svg" />
-          <img src="/assets/icons/header-icons/Cart1 with buy.svg" />
+          <img src="/assets/header/Vector.svg" />
+          <img src="/assets/header/Cart1 with buy.svg" />
           <Menu className="md:hidden cursor-pointer" onClick={handleMenuClick}/>
         </div>
       </div>

@@ -24,31 +24,31 @@ const Hero = () => {
                     <span><ChevronRight/></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Electronics</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Electronics</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Home & Lifestyle</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Home & Lifestyle</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Medicine</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Medicine</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Sports & Outdoor</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Sports & Outdoor</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Baby’s & Toys</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Baby’s & Toys</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Groceries & Pets</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Groceries & Pets</h4>
                     <span></span>
                 </div>
                 <div className='flex cursor-pointer'>
-                    <h4 className='hover:border-b hover:border-black'>Health & Beauty</h4>
+                    <h4 className='hover:border-b hover:border-black transition-all duration-300'>Health & Beauty</h4>
                     <span></span>
                 </div>
 
@@ -88,7 +88,7 @@ const Hero = () => {
                     </div>
 
                     {/* Slider scroller*/}
-                    <div className='flex gap-3 justify-center'>
+                    <div className='flex gap-3 justify-center p-3'>
                         <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
                         <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
                         <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
