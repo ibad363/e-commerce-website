@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import Homepage from "./components/home/Homepage";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Ibad</h1>
-    </div>
+    <>
+    <Header/>
+    <Homepage/>
+    </>
   );
 }
