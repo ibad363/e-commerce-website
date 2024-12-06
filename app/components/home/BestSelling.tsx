@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
+import ProductCard from "../ProductCard";
 import { Inter } from 'next/font/google';
-import ProductCard from "../other/ProductCard";
 const inter = Inter({
     subsets: ['latin'],
     weight: ['600',"700"],
@@ -24,25 +24,23 @@ const BestSelling = () => {
         </div>
 
         {/* Black Heading */}
-        <div className='flex flex-col sm:flex-row items-center justify-between mt-5 p-2 xl:p-0 gap-4up'>
+        <div className='flex flex-col sm:flex-row items-center justify-between mt-5 p-2 xl:p-0 gap-4'>
             {/* Best Selling Products */}
             <div className='flex flex-col md:flex-row justify-center md:justify-start items-center mx-auto md:mx-0 '>
                 <h1 className={`text-4xl tracking-wide font-semibold text-center ${inter.className}`}>Best Selling Products</h1>
             </div>
 
             {/* Button */}
-            <div className=''>
+            <div>
                 <Button variant="destructive" className='py-6 px-12 rounded max-w-[234px] w-full'>View All</Button>
             </div>
         </div>
 
         {/* Products */}
-        <div className='flex flex-wrap justify-center gap-[30px] my-[60px]'>
+        <div className='flex flex-wrap justify-center gap-[30px] mt-[60px]'>
             {productDetails.map((items, i) => {
                 return (
-                    <>
-                        <ProductCard key={i} imagePath={items.image} name={items.name} price={items.price} oldprice={items.oldprice} rating={items.rating} reviews={items.reviews} />
-                    </>
+                    <ProductCard key={i} imagePath={items.image} name={items.name} price={items.price} oldprice={items.oldprice} rating={items.rating} reviews={items.reviews} />
                 )
             })}
         </div>

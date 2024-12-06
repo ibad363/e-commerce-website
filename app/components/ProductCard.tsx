@@ -1,8 +1,8 @@
 import Image from "next/image"
-import hearticon from "../../../public/assets/flash-sales/Fill Heart.svg"
-import eyeicon from "../../../public/assets/flash-sales/Fill Eye.svg"
+import hearticon from "../../public/assets/flash-sales/Fill Heart.svg"
+import eyeicon from "../../public/assets/flash-sales/Fill Eye.svg"
 
-const ProductCard = (props: {name: string, price: number , oldprice: number, rating: number, reviews:number, discount?: number, imagePath: string}) => {
+const ProductCard = (props: {name: string, price: number , oldprice?: number, rating: number, reviews:number, discount?: number, imagePath: string}) => {
 
   return (
     <div className="max-w-[270px] w-full h-[350px] rounded">
@@ -32,7 +32,9 @@ const ProductCard = (props: {name: string, price: number , oldprice: number, rat
         {/* Product Detail */}
         <div className="mt-4 flex flex-col gap-1">
           <h3 className="">{props.name}</h3>
-          <p className="text-[#DB4444]">${props.price} <span className="text-black opacity-50 ml-3 line-through">${props.oldprice}</span></p>
+          <p className="text-[#DB4444]">${props.price} 
+            {props.oldprice && <span className="text-black opacity-50 ml-3 line-through">${props.oldprice}</span>}
+          </p>
           <div className="flex items-center">
             {Array.from({length:5}, (_ , index) =>{
               return(

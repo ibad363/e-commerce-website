@@ -4,6 +4,8 @@ import FlashSale from './FlashSale'
 import Category from './Category'
 import BestSelling from './BestSelling'
 import Banner from './Banner'
+import ExploreProducts from './ExploreProducts'
+import NewArrival from './NewArrival'
 
 const Homepage = () => {
   return (
@@ -13,6 +15,8 @@ const Homepage = () => {
      <Category/>
      <BestSelling/>
      <Banner/>
+     <ExploreProducts/>
+     <NewArrival/>
     </>
   )
 }

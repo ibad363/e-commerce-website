@@ -1,8 +1,8 @@
-import { ArrowRight,ArrowLeft  } from 'lucide-react';
 import semicolon from "../../../public/assets/flash-sales/Semiclone.svg"
 import Image from 'next/image';
-import ProductCard from '../other/ProductCard';
+import ProductCard from '../ProductCard';
 import { Button } from "@/components/ui/button"
+import { ArrowRight,ArrowLeft  } from 'lucide-react';
 import { Inter } from 'next/font/google';
 const inter = Inter({
     subsets: ['latin'],
@@ -19,18 +19,18 @@ const productDetails = [
 const FlashSale = () => {
   return (
     <div className="max-w-[1170px] mx-auto mt-[140px] font-Poppins">
-        {/* Today */}
+        {/* Red Heading */}
         <div className="flex items-center gap-5 p-2 xl:p-0">
             <div className="bg-[#DB4444] w-5 h-10 rounded-sm"></div>
             <p className="text-[#DB4444] font-semibold  tracking-wide">Today’s</p>
         </div>
 
-        {/* Heading */}
+        {/* Black Heading */}
         <div className='flex items-center justify-between mt-6 p-2 xl:p-0'>
 
             {/* flash sale heading */}
             <div className='flex flex-col md:flex-row justify-center md:justify-start items-center mx-auto md:mx-0 gap-4 md:gap-[87px]'>
-                <h1 className={`text-4xl  tracking-wide font-semibold ${inter.className}`}>Flash Sales</h1>
+                <h1 className={`text-4xl tracking-wide font-semibold  ${inter.className}`}>Flash Sales</h1>
                 {/* counter */}
                 <div className='flex flex-wrap items-center'>
                     <Counter timeUnit='Days' value="03"/>
@@ -53,10 +53,8 @@ const FlashSale = () => {
         {/* Products */}
         <div className='mt-10 mb-[60px] flex flex-wrap justify-center gap-[30px]'>
             {productDetails.map((items , i)=> {
-                return( 
-                    <>
-                        <ProductCard key={i} discount={items.discount} imagePath={items.image} name={items.name} price={items.price} oldprice={items.oldprice} rating={items.rating} reviews={items.reviews}/>
-                    </>
+                return(
+                    <ProductCard key={i} discount={items.discount} imagePath={items.image} name={items.name} price={items.price} oldprice={items.oldprice} rating={items.rating} reviews={items.reviews}/>
                 )
             })}
         </div>
