@@ -7,7 +7,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({
     subsets: ['latin'],
     weight: [ '600'],
-  });
+});
 
 const Hero = () => {
   return (
@@ -58,43 +58,41 @@ const Hero = () => {
             <div className='mx-4 w-[0.5px] bg-black hidden lg:block'></div>
 
             {/* right section */}
-            <div className='pt-10'>
-                <div className='bg-black max-w-[892px] h-auto md:h-[344px]'>
-                    {/* Content */}
-                    <div className='flex flex-col md:flex-row justify-center items-center h-[90%] text-white p-1 sm:p-4'>
-                        <div className='px-4 sm:px-16 space-y-5 mt-6'>
-                            {/* Heading */}
-                            <div className='flex items-center justify-center md:justify-start space-x-5'>
-                                <Image src={appleLogo} alt='Apple Logo'></Image>
-                                <p>iPhone 14 Series</p>
-                            </div>
-
-                            {/* discount */}
-                            <div className='max-w-[298px]'>
-                                <h1 className={`text-4xl sm:text-5xl text-center md:text-left ${inter.className}`}>Up to 10% off Voucher</h1>
-                            </div>
-
-                            {/* shop now */}
-                            <div className='flex gap-3 justify-center md:justify-start'>
-                                <p className='border-b'>Shop Now</p>
-                                <span className=''><ArrowRight/></span>
-                            </div>
+            <div className='bg-black max-w-[892px] w-full h-auto md:h-[344px] mt-10'>
+                {/* Content */}
+                <div className='flex flex-col md:flex-row justify-center items-center h-[90%] text-white p-1 sm:p-4'>
+                    <div className='px-4 sm:px-16 space-y-5 mt-6'>
+                        {/* Heading */}
+                        <div className='flex items-center justify-center md:justify-start space-x-5'>
+                            <Image src={appleLogo} alt='Apple Logo'></Image>
+                            <p>iPhone 14 Series</p>
                         </div>
 
-                        {/* Image */}
-                        <div className='sm:max-w-[496px] w-auto mt-8'>
-                            <Image src={iphone} alt='Iphone Image' width={300} height={300} className='w-full h-full object-cover'></Image>
+                        {/* discount */}
+                        <div className='max-w-[298px]'>
+                            <h1 className={`text-4xl sm:text-5xl text-center md:text-left ${inter.className}`}>Up to 10% off Voucher</h1>
+                        </div>
+
+                        {/* shop now */}
+                        <div className='flex gap-3 justify-center md:justify-start'>
+                            <p className='border-b'>Shop Now</p>
+                            <span className=''><ArrowRight/></span>
                         </div>
                     </div>
 
-                    {/* Slider scroller*/}
-                    <div className='flex gap-3 justify-center p-3'>
-                        <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
-                        <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
-                        <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
-                        <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
-                        <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
+                    {/* Image */}
+                    <div className='sm:max-w-[496px] w-auto mt-8'>
+                        <Image src={iphone} alt='Iphone Image' width={300} height={300} className='w-full h-full object-cover'></Image>
                     </div>
+                </div>
+
+                {/* Slider scroller*/}
+                <div className='flex gap-3 justify-center p-3'>
+                    <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
+                    <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
+                    <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
+                    <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
+                    <div className='bg-gray-500 hover:bg-[#DB4444] w-3 h-3 border-white hover:border-[2px] rounded-full'></div>
                 </div>
             </div>
         </div>
