@@ -1,6 +1,7 @@
 import Image from "next/image"
 import hearticon from "../../public/assets/flash-sales/Fill Heart.svg"
 import eyeicon from "../../public/assets/flash-sales/Fill Eye.svg"
+import Link from "next/link"
 
 const ProductCard = (props: {name: string, price: number , oldprice?: number, rating: number, reviews:number, discount?: number, imagePath: string}) => {
 
@@ -31,7 +32,7 @@ const ProductCard = (props: {name: string, price: number , oldprice?: number, ra
 
         {/* Product Detail */}
         <div className="mt-4 flex flex-col gap-1">
-          <h3 className="">{props.name}</h3>
+          <Link href={"/productdetail"}><h3 className="cursor-pointer">{props.name}</h3></Link>
           <p className="text-[#DB4444]">${props.price} 
             {props.oldprice && <span className="text-black opacity-50 ml-3 line-through">${props.oldprice}</span>}
           </p>

@@ -7,6 +7,8 @@ const inter = Inter({
 const Footer = () => {
   return (
     <div className="mt-[140px] max-w-[1440px] check -[440px] h-auto mx-auto bg-black text-[#FAFAFA] font-Poppins">
+
+        {/* Description */}
         <div className="max-w-[1170px] mx-auto flex flex-wrap justify-center gap-[87px] pt-[80px] px-4 sm:px-0">
             {/* Exclusive */}
             <div className='w-[300px] sm:w-[217px]'>
@@ -35,20 +37,20 @@ const Footer = () => {
             {/* Account */}
             <div className='flex flex-col gap-4 w-[300px] sm:w-[123px]'>
                 <p className='font-medium text-xl mb-5'>Account</p>
-                <p>My Account</p>
-                <p>Login / Register</p>
-                <p>Cart</p>
-                <p>Wishlist</p>
-                <p>Shop</p>
+                <a className='hover:underline cursor-pointer'>My Account</a>
+                <a className='hover:underline cursor-pointer'>Login / Register</a>
+                <a className='hover:underline cursor-pointer'>Cart</a>
+                <a className='hover:underline cursor-pointer'>Wishlist</a>
+                <a className='hover:underline cursor-pointer'>Shop</a>
             </div>
 
             {/* Quick Link */}
             <div className='flex flex-col gap-4 w-[300px] sm:w-[109px]'>
                 <p className='font-medium text-xl mb-5'>Quick Link</p>
-                <p>Privacy Policy</p>
-                <p>Terms Of Use</p>
-                <p>FAQ</p>
-                <p>Contact</p>
+                <a className='hover:underline cursor-pointer'>Privacy Policy</a>
+                <a className='hover:underline cursor-pointer'>Terms Of Use</a>
+                <a className='hover:underline cursor-pointer'>FAQ</a>
+                <a className='hover:underline cursor-pointer'>Contact</a>
             </div>
 
             {/* Download App */}

@@ -53,7 +53,7 @@ const Header = () => {
 
         <ul className="hidden md:flex gap-4">
           <li className="cursor-pointer hover:border-b-[#000000] hover:border-b-[0.5px] transition-all duration-300">
-            Home
+            <a href="/">Home</a>
           </li>
           <li className="cursor-pointer hover:border-b-[#000000] hover:border-b-[0.5px] transition-all duration-300">
             Contact
@@ -90,7 +90,7 @@ const Header = () => {
               <SheetDescription>
                 <ul className="flex flex-col gap-4">
                   <li className="cursor-pointer hover:border-b-[#000000] hover:border-b-[0.5px] transition-all duration-300">
-                    Home
+                    <a href="/">Home</a>
                   </li>
                   <li className="cursor-pointer hover:border-b-[#000000] hover:border-b-[0.5px] transition-all duration-300">
                     Contact
